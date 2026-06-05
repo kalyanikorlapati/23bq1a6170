@@ -1,0 +1,27 @@
+{
+  "name": "campus-notifications-logging-middleware",
+  "version": "1.0.0",
+  "description": "Reusable structured logging middleware for Campus Notifications (Morgan + Winston)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "jest --coverage",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "morgan": "^1.10.0",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.12.0",
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.4"
+  }
+}
